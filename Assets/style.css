@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #080802
+}
+label.city-input{
+    font-weight: 600;
+    font-size: 25px;
+}
+div.title {
+    
+    color: #fff;
+    text-align: center;
+}
+div.title h1 {
+    padding: 10px;
+}
+
+
+main.dashboard {
+    background-color: #020202;
+    color: #fff;
+}
+
+div.city {
+    padding: 8px;
+}
+
+div.city-list {
+    margin-top: 20px;
+}
+
+div.recent-searches h2 {
+    font-size: 20px;
+}
+
+
+
+div.cityName {
+    background-color: white;
+    color: black;   
+    font-style: none;
+}
+
+
+div.currentWeather {
+    margin-bottom: 20px;
+    background-color: #020202;
+}
+
+div.currentWeather h2,
+div.currentWeather h3 {
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+span#uvdex {
+    color: white;
+}
+
+div.five-day h2 {
+    font-size: 1.2rem;
+}
+
+div.five-day p {
+    font-size: .8rem;
+}
+
+div.five-day p.card-title {
+    font-weight: bold;
+    color: white;
+}
+
+#search-btn{
+    background-color: #0aed19;
+}
+ 
+.card {
+    background-color: #d10023;
+}
+
+.text-muted {
+    color: #fff !important;
+}
+
+button:focus,
+button:active,
+button:hover,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+label:focus,
+.form-group textarea:hover,
+.form-group textarea:focus
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+    background: transparent;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/fdf8c977f5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./Assets/style.css">
+        <title>Weather Dashboard</title>
+    </head>
+
+    <body>
+        <div class="col-md-6 left-panel">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="city-input" class="city-input">Search Cities</label>
+                        <input type="text" placeholder="Search Cities" class="form-control" id="city-input">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2 align-text-bottom" id="search-btn">Search
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row recent-searches">
+                <div class="col-sm-12">
+                    <h2>Recent Searches</h2>
+                </div>
+            </div>
+
+            <div class="row city-list m-0">
+            </div>
+        </div>
+
+        <header class="container">
+            <div class="title">
+                <h1>Weather Dashboard</h1>
+            </div>
+        </header>
+        <main class="container-fluid dashboard">
+            <div class="row">
+                <div class="col-12 currentWeather">
+                    <div class="city-name">
+                        <h2 id="city"></h2>
+                        <h3 id="date"></h3>
+                    </div>
+                    <p class="pt-1 p1-2">Temp: <span id="temp"></span> &deg;F</p>
+                    <p class="pl-2">Humidity: <span id="humid"></span>%</p>
+                    <p class="pl-2">Wind Speed: <span></span> mp/h</p>
+                    <p class="pl-2">UV-Index: <span id="uvdex" class="p-1"></span></p>
+                </div>
+            </div>
+
+            <div class="five-day">
+                <h2>5 Day Forecast</h2>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="card day-0 text-center">
+                                    <div class="card-body p-1">
+                                        <p class="card-title">Day 1</p>
+                                        <img class="five-day-img mb-1" />
+                                        <p class="card-subtitle mb-1 text-muted">Temp: <span
+                                        class="five-day-temp"></span>
+                                        F</p>
+                                        <p class="card-subtitle mb-1 text-muted">Humidity: <span
+                                        class="five-day-humid"></span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="card day-1">
+                                    <div class="card-body p-1">
+                                        <p class="card-title">Day 2</p>
+                                        <img class="five-day-img mb-1" />
+                                        <p class="card-subtitle mb-1 text-muted">Temp: <span
+                                        class="five-day-temp"></span>
+                                        F</p>
+                                        <p class="card-subtitle mb-1 text-muted">Humidity: <span
+                                        class="five-day-humid"></span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="card day-2">
+                                    <div class="card-body p-1">
+                                        <p class="card-title">Day 3</p>
+                                        <img class="five-day-img mb-1" />
+                                        <p class="card-subtitle mb-1 text-muted">Temp: <span
+                                        class="five-day-temp"></span>
+                                        F</p>
+                                        <p class="card-subtitle mb-1 text-muted">Humidity: <span
+                                        class="five-day-humid"></span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="card day-3">
+                                    <div class="card-body p-1">
+                                        <p class="card-title">Day 4</p>
+                                        <img class="five-day-img mb-1" />
+                                        <p class="card-subtitle mb-1 text-muted">Temp: <span
+                                        class="five-day-temp"></span>
+                                        F</p>
+                                        <p class="card-subtitle mb-1 text-muted">Humidity: <span
+                                        class="five-day-humid"></span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-2">
+                                <div class="card day-4">
+                                    <div class="card-body p-1">
+
+                                        <p class="card-title">Day 5</p>
+                                        <img class="five-day-img mb-1" />
+                                        <p class="card-subtitle mb-1 text-muted">
+                                        Temp: <span class="five-day-temp"></span> F</p>
+                                        <p class="card-subtitle mb-1 text-muted">Humidity: <span
+                                        class="five-day-humid"></span>%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div> 
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+        <script src="./Assets/script.js"></script>
+    </body>
+</html>
